@@ -12,14 +12,14 @@
     }
 
     const fares: Record<FareEurope | FareTransatlantic, Fare> = {
-        SAVER: { key: 'SAVER', label: 'Saver', emoji: '💸' },
-        PLUS: { key: 'PLUS', label: 'Plus', emoji: '💸' },
-        ADVANTAGE: { key: 'ADVANTAGE', label: 'Advantage', emoji: '💸' },
-        AERSPACE: { key: 'AERSPACE', label: 'Aer Space', emoji: '💸' },
-        SMART: { key: 'SMART', label: 'Smart', emoji: '💸' },
-        FLEX: { key: 'FLEX', label: 'Flex', emoji: '💸' },
-        BUSINESS: { key: 'BUSINESS', label: 'Business', emoji: '💸' },
-        BUSSINESSFLEX: { key: 'BUSSINESSFLEX', label: 'Business Flex', emoji: '💸' }
+        SAVER: { key: 'SAVER', label: 'Saver', emoji: '🏷️' },
+        PLUS: { key: 'PLUS', label: 'Plus', emoji: '🎒' },
+        ADVANTAGE: { key: 'ADVANTAGE', label: 'Advantage', emoji: '🧳' },
+        AERSPACE: { key: 'AERSPACE', label: 'Aer Space', emoji: '💺' },
+        SMART: { key: 'SMART', label: 'Smart', emoji: '💡' },
+        FLEX: { key: 'FLEX', label: 'Flex', emoji: '🔄' },
+        BUSINESS: { key: 'BUSINESS', label: 'Business', emoji: '💼' },
+        BUSSINESSFLEX: { key: 'BUSSINESSFLEX', label: 'Business Flex', emoji: '💼🔄' }
     };
 
     let requiredCredits: Record<MembershipLevel, number> = {

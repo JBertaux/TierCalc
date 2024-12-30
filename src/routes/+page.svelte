@@ -9,55 +9,10 @@
     };
 </script>
 
-<style>
-    .form-container {
-      max-width: 400px;
-      margin: 2rem auto;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      background-color: #f9f9f9;
-    }
-  
-    .form-container h1 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-  
-    .form-container form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .form-container input {
-      padding: 0.5rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-  
-    .form-container button {
-      padding: 0.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 4px;
-      background-color: #0070ff;
-      color: #fff;
-      cursor: pointer;
-    }
-  
-    .form-container button:hover {
-      background-color: #005bb5;
-    }
-</style>
-
-<div class="form-container">
-    <h1>TierCalc</h1>
-    <form {onsubmit}>
-      <label for="tierCredits">Enter your tier credits:</label>
+<div class="max-w-md mx-auto mt-8 p-6 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
+    <h1 class="text-2xl font-bold mb-4 text-center">TierCalc</h1>
+    <form {onsubmit} class="flex flex-col gap-4">
+      <label for="tierCredits" class="text-lg">Enter your tier credits:</label>
       <input
         bind:value={tierCredits}
         type="number"
@@ -65,8 +20,9 @@
         id="tierCredits"
         placeholder="e.g. 1200"
         required
+        class="p-2 border border-gray-300 rounded"
       />
-      <button type="submit">Compute</button>
+      <button type="submit" class="p-2 bg-blue-500 text-white rounded hover:bg-blue-700">Compute</button>
     </form>
 </div>
 
